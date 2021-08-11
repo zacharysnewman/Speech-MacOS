@@ -6,9 +6,16 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		889C85C62602672300E6E8E1 /* Speech.mm in Sources */ = {isa = PBXBuildFile; fileRef = 889C85C52602672300E6E8E1 /* Speech.mm */; };
+		889C85CB2602675300E6E8E1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889C85CA2602675300E6E8E1 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		889C85BB260266FD00E6E8E1 /* Speech-MacOS.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Speech-MacOS.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		889C85BE260266FD00E6E8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889C85C52602672300E6E8E1 /* Speech.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Speech.mm; sourceTree = "<group>"; };
+		889C85CA2602675300E6E8E1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -16,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889C85CB2602675300E6E8E1 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -27,6 +35,7 @@
 			children = (
 				889C85BD260266FD00E6E8E1 /* Speech-MacOS */,
 				889C85BC260266FD00E6E8E1 /* Products */,
+				889C85C92602675300E6E8E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -42,8 +51,17 @@
 			isa = PBXGroup;
 			children = (
 				889C85BE260266FD00E6E8E1 /* Info.plist */,
+				889C85C52602672300E6E8E1 /* Speech.mm */,
 			);
 			path = "Speech-MacOS";
+			sourceTree = "<group>";
+		};
+		889C85C92602675300E6E8E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				889C85CA2602675300E6E8E1 /* AppKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889C85C62602672300E6E8E1 /* Speech.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +191,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -225,6 +244,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
